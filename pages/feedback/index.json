@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "意见反馈",
+  "usingComponents": {
+    "y-tabs": "/components/y-tabs/y-tabs",
+    "y-sm-img": "/components/y-sm-img/y-sm-img"
+  }
 }

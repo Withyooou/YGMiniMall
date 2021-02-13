@@ -1,11 +1,11 @@
 <!--pages/goods_list/index.wxml-->
 <!-- 顶部搜索框 -->
 <y-search-bar />
+
 <!-- 导航栏 -->
-<y-tabs tabs="{{tabs}}" bind:tabsChange="handleTabsChange"/>
-<!-- 商品列表 -->
-<block wx:if="{{tabs[0].isActive}}">
-  <view class="first_tab">
+<y-tabs tabs="{{tabs}}" bind:tabsChange="handleTabsChange">
+  <!-- 商品列表 -->
+  <view class="first_tab" wx:if="{{tabs[0].isActive}}">
     <navigator class="goods_item" 
                 wx:for="{{goodsList}}"
                 wx:key="goods_id"
@@ -21,8 +21,10 @@
       </view>
     </navigator>
   </view>
-</block>
-<block wx:elif="{{tabs[1].isActive}}">1 - 接口暂未提供数据</block>
-<block wx:elif="{{tabs[2].isActive}}">2 - 接口暂未提供数据</block>
+
+  <view wx:elif="{{tabs[1].isActive}}" class="emptyText">（销量）接口暂未提供数据</view>
+  <view wx:elif="{{tabs[2].isActive}}" class="emptyText">（价格）接口暂未提供数据</view>
+</y-tabs>
+
 <!-- 返回顶部按钮 -->
 <y-back-top wx:if="{{showBackTop}}"/>

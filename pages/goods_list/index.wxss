@@ -1,4 +1,8 @@
 /* pages/goods_list/index.wxss */
+page {
+  height: 100%;
+  position: relative;
+}
 .first_tab .goods_item {
   height: 240rpx;
   border-bottom: 4rpx solid #F5F5F5;
@@ -28,4 +32,13 @@
 .first_tab .goods_item .goods_content .goods_price {
   color: #E42F14;
   font-weight: bold;
+}
+.emptyText {
+  font-size: 36rpx;
+  color: #666;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
 }
