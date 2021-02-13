@@ -118,3 +118,15 @@ export const requestPayment = (pay) => {
   })
 }
 
+// 防抖函数
+export function debounce(func, delay) {
+  let timer = null;
+  delay = delay || 1000;
+  return function(...args) {
+    if(timer) clearTimeout(timer)
+    timer = setTimeout(() => {
+      func.apply(this, args)
+    }, delay)
+  }
+};
+

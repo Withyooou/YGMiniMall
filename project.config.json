@@ -107,6 +107,12 @@
           "pathName": "pages/collect/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "商品搜索",
+          "pathName": "pages/search/index",
+          "query": "",
+          "scene": null
         }
       ]
     }
