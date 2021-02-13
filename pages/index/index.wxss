@@ -18,6 +18,9 @@
 .index_floor .floor .floor_title image {
   width: 100%;
 }
+.index_floor .floor .floor_list {
+  overflow: hidden;
+}
 .index_floor .floor .floor_list navigator {
   float: left;
   width: 33.33%;

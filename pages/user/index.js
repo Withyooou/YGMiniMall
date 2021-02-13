@@ -44,5 +44,12 @@ Page({
   // 关于我们
   async aboutUs() {
     await showToast({title:'Make by Withyooou'})
+  },
+  // 未完成模块的弹窗
+  async unfinished() {
+    await showToast({
+      title: '该模块尚未完成T^T',
+      duration: 1000
+    })
   }
 })

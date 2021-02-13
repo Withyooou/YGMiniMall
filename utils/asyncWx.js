@@ -68,11 +68,12 @@ export const showModal = ({ content }) => {
 /**
  *  promise形式  showToast
  */
-export const showToast = ({ title }) => {
+export const showToast = ({ title, duration }) => {
   return new Promise((resolve, reject) => {
     wx.showToast({
       title: title,
       icon: 'none',
+      duration: duration || 1500,
       success: (res) => {
         resolve(res);
       },

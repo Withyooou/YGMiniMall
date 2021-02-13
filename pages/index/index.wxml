@@ -5,7 +5,7 @@
   <y-swiper swiperList="{{swiperList}}" />
   <!-- 分类导航 -->
   <view class="index_nav">
-    <navigator url="/pages/category/index" open-type="switchTab" wx:for="{{navList}}" wx:key="name">
+    <navigator open-type="switchTab" url="/pages/category/index" wx:for="{{navList}}" wx:key="name">
       <image mode="widthFix" src="{{item.image_src}}" />
     </navigator>
   </view>

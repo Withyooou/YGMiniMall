@@ -13,7 +13,10 @@ Page({
   // 新建一个对象用于保存全部商品数据
   goodsInfo: {},
   // 页面加载生命周期函数
-  onLoad(options) {
+  onShow() {
+    let pages = getCurrentPages();
+    let currentPage = pages[pages.length-1];
+    let options = currentPage.options;
     const { goods_id } = options;
     // console.log(goods_id)
     this.getGoodsDetail(goods_id)

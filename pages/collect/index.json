@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "商品收藏",
+  "usingComponents": {
+    "y-tabs": "/components/y-tabs/y-tabs"
+  }
 }
