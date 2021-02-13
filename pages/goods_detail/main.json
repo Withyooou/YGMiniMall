@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "商品详情",
+  "usingComponents": {
+    "y-swiper": "./childCpns/y-swiper/y-swiper",
+    "y-goods-info": "./childCpns/y-goods-info/y-goods-info",
+    "y-bottom-bar": "./childCpns/y-bottom-bar/y-bottom-bar",
+    "y-back-top": "/components/y-back-top/y-back-top"
+  }
+}

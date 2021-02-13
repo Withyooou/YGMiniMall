@@ -1,0 +1,15 @@
+.left_menu_list {
+  height: 100%;
+}
+.left_menu_list .menu_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+}
+.left_menu_list .active {
+  border-left: 8rpx solid #ef250f;
+  font-weight: 700;
+  font-size: 32rpx;
+  color: #444444;
+}

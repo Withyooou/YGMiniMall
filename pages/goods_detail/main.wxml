@@ -1,0 +1,11 @@
+<!-- 顶部轮播图 -->
+<y-swiper pics="{{goodsObj.pics}}"/>
+
+<!-- 商品信息模块 -->
+<y-goods-info goodsObj="{{goodsObj}}" isCollect="{{isCollect}}" bind:handleCollect="handleCollect"/>
+
+<!-- 底部导航栏 -->
+<y-bottom-bar bind:handleAddCart="handleAddCart"/>
+
+<!-- 返回顶部按钮 -->
+<y-back-top wx:if="{{showBackTop}}"/>

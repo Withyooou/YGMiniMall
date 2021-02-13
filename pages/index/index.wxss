@@ -1,0 +1,52 @@
+.index_nav {
+  width: 100%;
+  display: flex;
+}
+.index_nav navigator {
+  flex: 1;
+  padding: 20rpx;
+}
+.index_nav navigator image {
+  width: 100%;
+}
+.index_floor .floor {
+  overflow: hidden;
+}
+.index_floor .floor .floor_title {
+  padding: 15rpx 0;
+}
+.index_floor .floor .floor_title image {
+  width: 100%;
+}
+.index_floor .floor .floor_list navigator {
+  float: left;
+  width: 33.33%;
+  overflow: hidden;
+}
+.index_floor .floor .floor_list navigator image {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.index_floor .floor .floor_list navigator:nth-last-child(-n+4) {
+  /**
+           * 第1张原图的宽高为: 232 * 386
+           * 等比例缩放公式: 232 / 386 = 33.33vw / height
+           * 第1张图片的高度等于: 33.33vw * 386 / 232
+           * 后4张图片的高度等于第1张图片的一半: 33.33vw * 386 / 232 / 2
+           */
+  height: calc(33.33vw * 386 / 232 / 2);
+  padding-left: 10rpx;
+  padding-bottom: 10rpx;
+}
+.index_floor .floor .floor_list navigator:first-child {
+  padding-left: 10rpx;
+}
+.index_floor .floor .floor_list navigator:nth-child(3),
+.index_floor .floor .floor_list navigator:nth-child(5) {
+  padding-right: 10rpx;
+}
+.index_floor .floor .floor_list navigator:nth-child(4),
+.index_floor .floor .floor_list navigator:nth-child(5) {
+  padding-bottom: 16rpx;
+}

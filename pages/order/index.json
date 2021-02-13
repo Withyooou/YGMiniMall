@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "订单查询",
+  "usingComponents": {
+    "y-tabs": "/components/y-tabs/y-tabs"
+  }
+}

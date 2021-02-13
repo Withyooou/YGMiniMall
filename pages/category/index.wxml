@@ -1,0 +1,11 @@
+<!--pages/category/index.wxml-->
+<view class="category">
+  <!-- 顶部搜索框 -->
+  <y-search-bar/>
+  <view class="cates">
+    <!-- 左侧导航栏 -->
+    <y-menu leftMenuList="{{leftMenuList}}" bind:menuclick="handleMenuClick"/>
+    <!-- 右侧分类列表 -->
+    <y-content rightConentList="{{rightConentList}}" topNum="{{topNum}}"/>
+  </view>
+</view>

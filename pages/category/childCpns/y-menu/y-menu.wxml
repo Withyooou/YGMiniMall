@@ -1,0 +1,9 @@
+<scroll-view class="left_menu_list" scroll-y>
+  <view class="menu_item {{index === currentIndex ? 'active' : ''}}" 
+        wx:for="{{leftMenuList}}" 
+        wx:key="*this" 
+        data-index="{{index}}" 
+        bindtap="handleItemTap">
+    {{item}}
+  </view>
+</scroll-view>

@@ -1,0 +1,95 @@
+/* pages/cart/childCpns/y-cart-items/y-cart-items.wxss */
+.cart_content {
+  height: 100%;
+  position: relative;
+}
+.cart_content .cart_main {
+  width: 100%;
+  height: 100%;
+}
+.cart_content .cart_main .cart_item {
+  display: flex;
+  padding: 10rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.cart_content .cart_main .cart_item .cart_chk_wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart_content .cart_main .cart_item .cart_img_wrap {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.cart_content .cart_main .cart_item .cart_img_wrap image {
+  width: 80%;
+}
+.cart_content .cart_main .cart_item .cart_info_wrap {
+  flex: 5;
+  padding-right: 16rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cart_content .cart_main .cart_item .cart_info_wrap .goods_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #666;
+}
+.cart_content .cart_main .cart_item .cart_info_wrap .goods_price_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.cart_content .cart_main .cart_item .cart_info_wrap .goods_price_wrap .goods_price {
+  color: var(--themeColor);
+  font-size: 34rpx;
+}
+.cart_content .cart_main .cart_item .cart_info_wrap .goods_price_wrap .cart_num_tool {
+  display: flex;
+}
+.cart_content .cart_main .cart_item .cart_info_wrap .goods_price_wrap .cart_num_tool .num_edit {
+  width: 55rpx;
+  height: 55rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1rpx solid #ccc;
+}
+.cart_content .cart_main .cart_item .cart_info_wrap .goods_price_wrap .cart_num_tool .goods_num {
+  width: 55rpx;
+  height: 55rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart_content .cart_main .empty_wrap {
+  width: 100%;
+  height: 100%;
+}
+.cart_content .cart_main .empty_wrap .emptyButton {
+  color: rgba(102, 102, 102, 0.6);
+  font-weight: 600;
+  width: 25%;
+  line-height: 70rpx;
+  text-align: center;
+  border: rgba(102, 102, 102, 0.6) solid 4rpx;
+  border-radius: 25rpx;
+  background-color: #eee;
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+}
+.cart_content .cart_main .empty_wrap .emptyImg {
+  width: 60%;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}

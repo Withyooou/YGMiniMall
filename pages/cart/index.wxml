@@ -1,0 +1,32 @@
+<!-- 获取收货地址 -->
+<view class="revice_address_row">
+  <!-- 当收货地址不存在,显示按钮 -->
+  <view class="address_btn" wx:if="{{!address.userName}}">
+    <button type="warn" plain bindtap="handleChooseAddress">
+      <text class="iconfont icon-dizhi"></text>
+      <text> 获取收货地址</text>
+    </button>
+  </view>
+  <!-- 当收货地址存在,显示详细地址信息 -->
+  <view wx:else class="user_info_row">
+    <view class="user_info" bindtap="handleChooseAddress">
+      <view class="user_name">{{address.userName}}</view>
+      <view class="user_realAddress">{{address.all}}</view>
+    </view>
+    <view class="user_phone">{{address.telNumber}}</view>
+  </view>
+</view>
+
+<!-- 购物车商品项 -->
+<y-cart-items cart="{{cart}}" 
+              bind:handeItemChange="handeItemChange" 
+              bind:handleItemNumEdit="handleItemNumEdit"
+              bind:handleLongPress="handleLongPress"/>
+
+<!-- 底部结算信息栏 -->
+<y-cart-bottom allChecked="{{allChecked}}" 
+                totalPrice="{{totalPrice}}" 
+                totalNum="{{totalNum}}"
+                cartLength="{{cart.length}}"
+                bind:handleItemAllCheck="handleItemAllCheck"
+                bind:handlePay="handlePay"/>

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "商品分类",
+  "usingComponents": {
+    "y-search-bar": "/components/y-search-bar/y-search-bar",
+    "y-menu": "./childCpns/y-menu/y-menu",
+    "y-content": "./childCpns/y-content/y-content"
+  }
+}

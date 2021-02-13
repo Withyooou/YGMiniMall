@@ -1,0 +1,107 @@
+/* pages/cart/childCpns/y-cart-items/y-cart-items.wxss */
+.cart_content {
+  height: 100%;
+  position: relative;
+
+  .cart_main {
+    width: 100%;
+    height: 100%;
+    .cart_item {
+      display: flex;
+      padding: 10rpx;
+      border-bottom: 1rpx solid #eee;
+
+      .cart_chk_wrap {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .cart_img_wrap {
+        flex: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        
+        image {
+          width: 80%;
+        }
+      }
+
+      .cart_info_wrap {
+        flex: 5;
+        padding-right: 16rpx;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .goods_name {
+          display: -webkit-box;
+          overflow: hidden;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          color: #666;
+        }
+
+        .goods_price_wrap {
+          display: flex;
+          justify-content: space-between;
+
+          .goods_price {
+            color: var(--themeColor);
+            font-size: 34rpx;
+          }
+
+          .cart_num_tool {
+            display: flex;
+
+            .num_edit {
+              width: 55rpx;
+              height: 55rpx;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: 1rpx solid #ccc;
+            }
+
+            .goods_num {
+              width: 55rpx;
+              height: 55rpx;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+
+    .empty_wrap {
+      width: 100%;
+      height: 100%;
+      .emptyButton {
+        color: rgba(102, 102, 102, .6);
+        font-weight: 600;
+        width: 25%;
+        line-height: 70rpx;
+        text-align: center;
+        border: rgba(102, 102, 102, .6) solid 4rpx;
+        border-radius: 25rpx;
+        background-color: #eee;
+        position: absolute;
+        left: 50%;
+        top: 75%;
+        transform: translate(-50%, -50%);
+      }
+      .emptyImg {
+        width: 60%;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<!--pages/goods_detail/childCpns/y-swiper/y-swiper.wxml-->
+<swiper class="swiper" autoplay circular indicator-dots>
+  <swiper-item wx:for="{{pics}}" 
+                wx:key="pics_id" 
+                bindtap="handlePrevewImage" 
+                data-url="{{item.pics_mid}}">
+    <image class="itemImage" mode="widthFix" src="{{item.pics_mid}}"></image>
+  </swiper-item>
+</swiper>

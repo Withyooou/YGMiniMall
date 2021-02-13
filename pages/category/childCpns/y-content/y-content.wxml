@@ -1,0 +1,22 @@
+<!-- 右侧内容区 -->
+<scroll-view class="right_content" scroll-y scroll-top="{{topNum}}">
+  <view class="goods_group" 
+        wx:for="{{rightConentList}}" 
+        wx:for-item="item1" 
+        wx:for-index="index1" 
+        wx:key="cat_id">
+    <view class="goods_title">{{item1.cat_name}}</view>
+    <view class="goods_list">
+      <block wx:for="{{item1.children}}"
+              wx:for-item="item2" 
+              wx:for-index="index2" 
+              wx:key="cat_id">
+        <!-- 注意: 微信小程序url变量需要加双大括号 -->
+        <navigator url="/pages/goods_list/index?cid={{item2.cat_id}}">
+          <image mode="widthFix" src="{{item2.cat_icon}}" />
+          <view class="goods_name">{{item2.cat_name}}</view>
+        </navigator>
+      </block>
+    </view>
+  </view>
+</scroll-view>

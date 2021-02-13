@@ -1,0 +1,13 @@
+/**
+ * swiper、image均有默认宽高
+ * 原图的宽高 750 * 340
+ * 让图片的宽度等于100%,高度自适应(mode="widthFix")
+ * 让swiper标签的高度变成和图片的高度一样即可(要计算) 
+ */
+.swiper {
+  width: 100%;
+  height: calc(340 / 750 * 100vw);
+}
+.swiper .swiper-img {
+  width: 100%;
+}

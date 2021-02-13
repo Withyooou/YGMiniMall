@@ -1,0 +1,20 @@
+<!--pages/cart/childCpns/y-cart-bottom/y-cart-bottom.wxml-->
+<view class="footer_tool">
+  <!-- 全选按钮 -->
+  <view class="all_chk_wrap">
+    <checkbox-group bindchange="handleItemAllCheck">
+      <checkbox checked="{{allChecked}}" color="#eb4450" disabled="{{!cartLength}}">全选</checkbox>
+    </checkbox-group>
+  </view>
+  <!-- 总价格 -->
+  <view class="total_price_wrap">
+    <view class="total_price">
+      合计: <text class="total_price_text">￥{{totalPrice}}</text>
+    </view>
+    <view>包含运费</view>
+  </view>
+  <!-- 结算按钮 -->
+  <view class="order_pay_wrap" bindtap="handlePay">
+    结算({{totalNum}})
+  </view>
+</view>

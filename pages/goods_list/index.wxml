@@ -1,0 +1,28 @@
+<!--pages/goods_list/index.wxml-->
+<!-- 顶部搜索框 -->
+<y-search-bar />
+<!-- 导航栏 -->
+<y-tabs tabs="{{tabs}}" bind:tabsChange="handleTabsChange"/>
+<!-- 商品列表 -->
+<block wx:if="{{tabs[0].isActive}}">
+  <view class="first_tab">
+    <navigator class="goods_item" 
+                wx:for="{{goodsList}}"
+                wx:key="goods_id"
+                url="/pages/goods_detail/main?goods_id={{item.goods_id}}">
+      <!-- 左侧图片 -->
+      <view class="goods_img_wrap">
+        <image mode="widthFix" src="{{item.goods_small_logo ? item.goods_small_logo : 'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}" />
+      </view>
+      <!-- 右侧商品 -->
+      <view class="goods_content">
+        <view class="goods_name">{{item.goods_name}}</view>
+        <view class="goods_price">￥{{item.goods_price}}</view>
+      </view>
+    </navigator>
+  </view>
+</block>
+<block wx:elif="{{tabs[1].isActive}}">1 - 接口暂未提供数据</block>
+<block wx:elif="{{tabs[2].isActive}}">2 - 接口暂未提供数据</block>
+<!-- 返回顶部按钮 -->
+<y-back-top wx:if="{{showBackTop}}"/>

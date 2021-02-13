@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "购物车",
+  "usingComponents": {
+    "y-cart-items": "./childCpns/y-cart-items/y-cart-items",
+    "y-cart-bottom": "./childCpns/y-cart-bottom/y-cart-bottom"
+  }
+}

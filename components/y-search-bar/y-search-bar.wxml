@@ -1,0 +1,4 @@
+<view class="search_input">
+  <!-- 注意: 搜索这里其实是一个超链接,点击后会跳转 -->
+  <navigator url="/pages/search/index">搜索</navigator>
+</view>

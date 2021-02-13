@@ -1,0 +1,46 @@
+/* pages/cart/childCpns/y-cart-bottom/y-cart-bottom.wxss */
+.footer_tool {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 90rpx;
+  display: flex;
+  border-top: 1rpx solid #ccc;
+
+  .all_chk_wrap {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .total_price_wrap {
+    flex: 5;
+    padding-right: 30rpx;
+    text-align: right;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+
+    .total_price {
+      .total_price_text {
+        color: var(--themeColor);
+        font-size: 30rpx;
+        font-weight: 600;
+      }
+    }
+
+  }
+
+  .order_pay_wrap {
+    flex: 3;
+    background-color: var(--themeColor);
+    color: #fff;
+    font-size: 32rpx;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

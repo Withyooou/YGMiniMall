@@ -1,0 +1,3 @@
+<!--pages/order/index.wxml-->
+<y-tabs tabs="{{tabs}}" bind:tabsChange="handleTabsChange"/>
+<text class="emptyText">权限原因，该功能暂未实现！</text>

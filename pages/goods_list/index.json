@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "商品列表",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "y-search-bar": "/components/y-search-bar/y-search-bar",
+    "y-tabs": "/components/y-tabs/y-tabs",
+    "y-back-top": "/components/y-back-top/y-back-top"
+  }
+}

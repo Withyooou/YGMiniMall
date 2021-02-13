@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "优购商城",
+  "usingComponents": {
+    "y-search-bar": "/components/y-search-bar/y-search-bar",
+    "y-swiper": "./childCpns/y-swiper/y-swiper"
+  }
+}
